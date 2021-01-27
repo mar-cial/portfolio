@@ -1,10 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Switch, Route } from 'react-router-dom';
+
+// Sections
 import Header from './Sections/Header';
 import Main from './Sections/Main';
 import Navigation from './Sections/Navigation';
-import Home from './Pages/Home';
 
+// Pages
+import Home from './Pages/Home';
+import About from './Pages/About';
+
+// App start
 const App = () => {
   return (
     <>
@@ -14,6 +20,9 @@ const App = () => {
         <Switch>
           <Route path="/" exact>
             <Home />
+          </Route>
+          <Route path="/about">
+            <About />
           </Route>
         </Switch>
       </Main>

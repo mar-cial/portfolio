@@ -1,8 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
+import ProjectContainer from '../Components/Projects/ProjectContainer';
 
 const HomeStyle = styled.section`
-  padding: 2vh;
+  display: grid;
+  grid-template-rows: 2fr 3fr;
+  height: 100%;
+
   header {
     h1 {
       font-size: 3rem;
@@ -10,10 +14,11 @@ const HomeStyle = styled.section`
     }
 
     p {
-      line-height: 4;
+      padding-top: 2rem;
     }
   }
 `;
+
 const Home = () => {
   return (
     <HomeStyle>
@@ -22,17 +27,14 @@ const Home = () => {
           Hey there.
           <br />
           My name is Mario César and I am a <br />
-          web developer.
+          software developer. Mostly web.
         </h1>
         <p>
-          I do everything with ReactJs ans Node. Currently learning TypeScript,
-          React Native and Golang.
+          I like building stuff with React, especially dashboards. Currently
+          learning TypeScript, React Native and Golang.
         </p>
       </header>
-
-      <h2>
-        Check out some of my projects below. Click them for a detailed view.
-      </h2>
+      <ProjectContainer />
     </HomeStyle>
   );
 };
