@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
 const ProjectCardStyle = styled.article`
@@ -15,29 +16,32 @@ const ProjectCardStyle = styled.article`
     }
   }
 
-  div {
-    background: white;
-    border: 2px solid black;
+  a {
     display: flex;
+    background: black;
+    color: white;
+    height: 100%;
     align-items: center;
-    border-radius: 8px;
     justify-content: center;
-    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
     transition: 200ms;
+    font-size: 1.2rem;
+
     &:hover {
-      background: black;
-      color: white;
-      transition: 200ms;
-      transform: translateY(-5px);
-    }
-    &:active {
       background: white;
       color: black;
-      transform: translateY(0);
+      transform: translateY(-3px);
+      transition: 200ms;
     }
 
-    span {
-      font-weight: bolder;
+    &:active {
+      background: black;
+      color: black;
+      transform: translateY(0);
+      color: white;
     }
   }
 `;
@@ -48,8 +52,9 @@ const ProjectCard = (props) => {
         <h3>{props.title}</h3>
         <p>{props.subtitle}</p>
       </header>
+
       <div>
-        <span>{`Go to ${props.title}`}</span>
+        <a href={props.toUrl}>{`Go to ${props.title}`}</a>
       </div>
     </ProjectCardStyle>
   );

@@ -12,6 +12,11 @@ const AboutStyle = styled.section`
       padding-top: 2rem;
     }
   }
+
+  ul {
+    padding-top: 1rem;
+    padding-left: 2rem;
+  }
 `;
 
 const About = () => {
@@ -33,11 +38,11 @@ const About = () => {
           like to keep the in mind during the design process.
         </p>
         <p>
-          I know a html and css. I haven't used raw css in a while, instead
-          opting for styled-components and scss. I think it is way more
-          mantainable to have the css dedicated exclusively to every component
-          instead of a separate file. Long selectors are unreadable! But that's
-          just my opinion.
+          I use a lot of html and css in the virtual DOM of React. I haven't
+          used raw css in a while, instead opting for styled-components and
+          scss. I think it is way more mantainable to have the css dedicated
+          exclusively to every component instead of a separate file. Long
+          selectors are unreadable! But that's just my opinion.
           <br />
           Css grid and flexbox are necessary to make dashboards work, and I am
           constantly trying to get better at them. My main focus is to make code
@@ -52,6 +57,18 @@ const About = () => {
               technologies I use:
             </b>
           </h3>
+          <ul>
+            <li>HTML</li>
+            <li>CSS/css-in-js/SCSS</li>
+            <li>Javascript</li>
+            <li>React</li>
+            <li>TypeScript</li>
+            <li>React Native</li>
+          </ul>
+          <p>
+            Including a bunch of tools that make life easier. Thank you for
+            reading!
+          </p>
         </p>
       </header>
     </AboutStyle>

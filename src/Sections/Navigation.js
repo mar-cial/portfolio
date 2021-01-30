@@ -55,9 +55,9 @@ const Navigation = () => {
       </header>
 
       <NavLink to="/">{`home`.toUpperCase()}</NavLink>
-      <NavLink to="/project">{'project'.toUpperCase()}</NavLink>
+      <NavLink to="/projects">{'project'.toUpperCase()}</NavLink>
       <NavLink to="/about">{`about`.toUpperCase()}</NavLink>
-      <NavLink to="/">home</NavLink>
+      <NavLink to="/contact">{`contact`.toUpperCase()}</NavLink>
     </NavigationStyle>
   );
 };

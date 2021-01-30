@@ -21,14 +21,18 @@ const ProjectContainer = () => {
       <ProjectCard
         title="Pockett Transfers"
         subtitle="Currency transfer app. Made with React, styling completely custom with styled-components, Firebase authentication and a few API calls for development only."
+        toUrl="https://mar-cial.github.io/pocketts"
       />
-      <ProjectCard
-        title="Landing Page Generator"
-        subtitle="A web app to generate a standard landing page, completely responsive. Don't worry about style, just fill out the content and you're ready to go."
-      />
+
       <ProjectCard
         title="Shopping Web App"
         subtitle="Web application for shopping online. Made with TypeScript and React."
+        toUrl="https://mar-cial.github.io/ecommerce-site"
+      />
+      <ProjectCard
+        title="Landing page generator"
+        subtitle="A generic landing page, completely responsive. Don't worry about style, just fill out the content and you're ready to go. PENDING"
+        toUrl="#"
       />
     </ProjectContainerSection>
   );
