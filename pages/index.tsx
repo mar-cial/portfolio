@@ -1,85 +1,137 @@
 import type { NextPage } from 'next'
-import Head from 'next/head'
 import Image from 'next/image'
-
+import React from 'react'
+import ExternalLinkLabel from '../components/externalLinkLabel'
+import { motion } from 'framer-motion'
 const Home: NextPage = () => {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center py-2">
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <main className="h-full dark:bg-black dark:text-white">
+      <div className="grid gap-6 p-8 overflow-y-scroll md:w-3/4 lg:w-1/2">
+        <header>
+          <h1 className="text-5xl font-bold">mar-cial</h1>
+          <div className="flex gap-2 pt-2">
+            <motion.a
+              href="https://github.com/mar-cial"
+              whileHover={{ y: -3 }}
+              whileTap={{ y: 0 }}
+            >
+              <Image
+                src={'/gh.svg'}
+                width={30}
+                height={30}
+                layout="fixed"
+                alt="Github Profile"
+              />
+            </motion.a>
+            <motion.a
+              href="https://www.linkedin.com/in/mario-césar-marcial-quintero-498353133/"
+              whileHover={{ y: -3 }}
+              whileTap={{ y: 0 }}
+            >
+              <Image
+                src={'/linkedin.svg'}
+                width={30}
+                height={30}
+                layout="fixed"
+                alt="Linkedin Profile"
+              />
+            </motion.a>
+            <motion.a
+              href="https://www.reddit.com/user/mar-cial"
+              whileHover={{ y: -3 }}
+              whileTap={{ y: 0 }}
+            >
+              <Image
+                src={'/reddit.svg'}
+                width={30}
+                height={30}
+                layout="fixed"
+                alt="Reddit Profile"
+              />
+            </motion.a>
+          </div>
+        </header>
 
-      <main className="flex w-full flex-1 flex-col items-center justify-center px-20 text-center">
-        <h1 className="text-6xl font-bold">
-          Welcome to{' '}
-          <a className="text-blue-600" href="https://nextjs.org">
-            Next.js!
-          </a>
-        </h1>
+        <section>
+          <h2 className="text-sm font-medium text-orange-500">Intro</h2>
+          <p>
+            My name is Mario César Marcial Quintero and I am a self thaught
+            front end developer based in Mexicali, Baja California, México.
+          </p>
+          <p>I have a year of experience with HTML, CSS and JavaScript.</p>
+        </section>
 
-        <p className="mt-3 text-2xl">
-          Get started by editing{' '}
-          <code className="rounded-md bg-gray-100 p-3 font-mono text-lg">
-            pages/index.tsx
-          </code>
-        </p>
+        <section>
+          <h2 className="text-sm font-medium text-orange-500">Tech Stack</h2>
+          <p>All my current projects are built using:</p>
+          <ul>
+            <li>NextJs</li>
+            <li>ReactJs</li>
+            <li>TypeScript</li>
+            <li>TailwindCSS</li>
+            <li>Framer Motion</li>
+          </ul>
+        </section>
 
-        <div className="mt-6 flex max-w-4xl flex-wrap items-center justify-around sm:w-full">
-          <a
-            href="https://nextjs.org/docs"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Documentation &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Find in-depth information about Next.js features and API.
+        <section>
+          <h2 className="text-sm font-medium text-orange-500">Projects</h2>
+
+          <article>
+            <header>
+              <h3 className="text-xl font-bold">Project Bytes</h3>
+            </header>
+            <p>
+              This is a personal project to practice React every day. I call it
+              Project Bytes because I do a project small enough to come up with
+              it and complete it on the same day.
             </p>
-          </a>
+            <div className="flex gap-4 pt-4">
+              <ExternalLinkLabel
+                url="https://github.com/mar-cial/project-bytes"
+                label="GitHub repo"
+              />
+              <ExternalLinkLabel
+                url="https://project-bytes-mar-cial.vercel.app"
+                label="Check it out"
+              />
+            </div>
+          </article>
 
-          <a
-            href="https://nextjs.org/learn"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Learn &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Learn about Next.js in an interactive course with quizzes!
+          <article className="pt-6">
+            <header>
+              <h3 className="text-xl font-bold">Flex Strip</h3>
+            </header>
+            <p>
+              This is a project for a small business that sells PVC rolls. It's
+              a work in progress as of March 5, 2022. What I particularly like
+              about this project is the clean and concise code quality required
+              to have each component and page work exactly as intended, and to
+              produce maintainable code.
             </p>
-          </a>
+            <div className="flex gap-4 pt-4">
+              <ExternalLinkLabel
+                url="https://github.com/mar-cial/flexstrip"
+                label="GitHub repo"
+              />
+              <ExternalLinkLabel
+                url="https://flexstrip.vercel.app"
+                label="Check it out"
+              />
+            </div>
+          </article>
+        </section>
 
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Examples &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Discover and deploy boilerplate example Next.js projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Deploy &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer className="flex h-24 w-full items-center justify-center border-t">
-        <a
-          className="flex items-center justify-center gap-2"
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-        </a>
-      </footer>
-    </div>
+        <section>
+          <h2 className="text-sm font-medium text-orange-500">About me</h2>
+          <p>
+            I learned how to program on my own, because I've always had a strong
+            interested in building useful software. Aside from computers, I love
+            hanging out with my friends, exploring all the things there are to
+            explore about coffee and playing video games.
+          </p>
+        </section>
+      </div>
+    </main>
   )
 }
 
