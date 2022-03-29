@@ -123,6 +123,23 @@ const Home: NextPage = () => {
               />
             </div>
           </article>
+
+          <article className='pt-6'>
+            <header>
+              <h3 className='text-xl font-bold'>RMDB - Rick and Morty API DB</h3>
+            </header>
+            <p>RMDB is a project made to showcase my vanilla ReactJs skills. In this project, the data was fetched from <a href="https://rickandmortyapi.com" className='font-medium text-orange-400'>Rick and Morty API</a> using the <a href="https://redux-toolkit.js.org/tutorials/rtk-query" className='font-medium text-orange-400'>RTK Query API.</a> I used Create React App, Redux, Redux Toolkit Query, and styled-components.</p>
+            <div className="flex gap-4 pt-4">
+              <ExternalLinkLabel
+                url="https://github.com/mar-cial/rmdb"
+                label="GitHub repo"
+              />
+              <ExternalLinkLabel
+                url="https://rmdb-mar-cial.vercel.app"
+                label="Check it out"
+              />
+            </div>
+          </article>
         </section>
 
         <section>
