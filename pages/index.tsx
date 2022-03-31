@@ -4,6 +4,9 @@ import React from 'react'
 import ExternalLinkLabel from '../components/externalLinkLabel'
 import { motion } from 'framer-motion'
 import ContactForm from '../components/contactForm'
+import SectionHeading from '../components/sectionHeading'
+import TextLink from '../components/textLink'
+import SkillBulletPoint from '../components/skillBulletPoint'
 
 const Home: NextPage = () => {
   return (
@@ -55,30 +58,29 @@ const Home: NextPage = () => {
         </header>
 
         <section>
-          <h2 className="text-sm font-medium text-orange-500">Intro</h2>
+          <SectionHeading text='Intro' />
           <p>
-            My name is Mario César Marcial Quintero and I am a self thaught
+            My name is Mario César Marcial Quintero and I am a self-taught
             front end developer based in Mexicali, Baja California, México.
           </p>
-          <p>I have a year of experience with HTML, CSS and JavaScript.</p>
+          <p>I have 2 years of experience with HTML, CSS and JavaScript, and one year of experience developing apps with ReactJs, especifically with NextJs framework. I prefer to implement TypeScript whenever possible, and style web apps preferably with TailwindCSS. Right now I'm really focused right now in getting very good at Redux Toolkit.</p>
           <p>I'm currently looking for work as a frontend developer.</p>
         </section>
 
         <section>
-          <h2 className="text-sm font-medium text-orange-500">Tech Stack</h2>
+          <SectionHeading text='Tech stack' />
           <p>All my current projects are built using:</p>
           <ul>
-            <li>NextJs</li>
-            <li>ReactJs</li>
-            <li>TypeScript</li>
-            <li>TailwindCSS</li>
-            <li>Framer Motion</li>
+            <SkillBulletPoint url='https://nextjs.org' text='NextJs' />
+            <SkillBulletPoint url='https://reactjs.org' text='ReactJs' />
+            <SkillBulletPoint url='https://www.typescriptlang.org' text='TypeScript' />
+            <SkillBulletPoint url='https://tailwindcss.com' text='TailwindCSS' />
+            <SkillBulletPoint url='https://www.framer.com/motion/' text='Framer motion' />
           </ul>
         </section>
 
         <section>
-          <h2 className="text-sm font-medium text-orange-500">Projects</h2>
-
+          <SectionHeading text='Projects' />
           <article>
             <header>
               <h3 className="text-xl font-bold">Project Bytes</h3>
@@ -128,7 +130,7 @@ const Home: NextPage = () => {
             <header>
               <h3 className='text-xl font-bold'>RMDB - Rick and Morty API DB</h3>
             </header>
-            <p>RMDB is a project made to showcase my vanilla ReactJs skills. In this project, the data was fetched from <a href="https://rickandmortyapi.com" className='font-medium text-orange-400'>Rick and Morty API</a> using the <a href="https://redux-toolkit.js.org/tutorials/rtk-query" className='font-medium text-orange-400'>RTK Query API.</a> I used Create React App, Redux, Redux Toolkit Query, and styled-components.</p>
+            <p>RMDB is a project made to showcase my vanilla ReactJs skills. In this project, the data was fetched from <TextLink url='https://rickandmortyapi.com' text='Rick and Mort API' /> using the <TextLink text='RTK Query API' url='https://redux-toolkit.js.org/tutorials/rtk-query' />. I used Create React App, Redux, Redux Toolkit Query, and styled-components.</p>
             <div className="flex gap-4 pt-4">
               <ExternalLinkLabel
                 url="https://github.com/mar-cial/rmdb"
@@ -143,9 +145,9 @@ const Home: NextPage = () => {
         </section>
 
         <section>
-          <h2 className="text-sm font-medium text-orange-500">About me</h2>
+          <SectionHeading text='About me' />
           <p>
-            I like challenges and find solutions to everyday problems. My ideal
+            I like challenges and to find solutions to everyday problems. My ideal
             job is one that allows me to approach solutions in a creative way,
             analyzing all the possible solutions where something can go wrong to
             correct them. In the work environment, I like the feeling of
@@ -160,7 +162,7 @@ const Home: NextPage = () => {
             blockchain technologies could be implemented both to facilitate and
             make the process more ergonomic and secure. I like to dream of all
             the ways that technology can make our lives easier, and I am excited
-            to think that I can participate in the development of some of them.
+            to think that I can participate in developing some of them.
           </p>
         </section>
 

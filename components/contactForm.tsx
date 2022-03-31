@@ -102,7 +102,7 @@ const ContactForm: FC = () => {
   }
 
   return (
-    <form onSubmit={handleSubmit} className={'flex flex-col pt-4'}>
+    <form onSubmit={handleSubmit} className={'flex flex-col pt-4 gap-2'}>
       <label htmlFor="fullname" className="text-sm font-medium">
         Full name
       </label>
@@ -111,7 +111,7 @@ const ContactForm: FC = () => {
         value={fullname}
         onChange={(e) => setFullname(e.target.value)}
         name="fullname"
-        className="border-2"
+        className="text-black border-2"
       />
       {errors?.fullname && (
         <p className="text-red-400">Full name cannot be empty.</p>
@@ -124,7 +124,7 @@ const ContactForm: FC = () => {
         value={email}
         onChange={(e) => setEmail(e.target.value)}
         name="email"
-        className="border-2"
+        className="text-black border-2"
       />
       {errors?.email && <p className="text-red-400">Email cannot be empty.</p>}
       <label htmlFor="subject" className="text-sm font-medium">
@@ -134,7 +134,7 @@ const ContactForm: FC = () => {
         type="text"
         value={subject}
         name="subject"
-        className="border-2"
+        className="text-black border-2"
         onChange={(e) => {
           setSubject(e.target.value)
         }}
@@ -150,7 +150,7 @@ const ContactForm: FC = () => {
         name="message"
         value={message}
         onChange={(e) => setMessage(e.target.value)}
-        className="border-2"
+        className="text-black border-2"
       ></textarea>
       <div className="text-left">
         {showSuccessMessage && (
@@ -166,7 +166,7 @@ const ContactForm: FC = () => {
       </div>
       <motion.button
         type="submit"
-        className="mt-4 border-2"
+        className="border-2"
         whileHover={{ y: -3 }}
         whileTap={{ y: 0 }}
       >
