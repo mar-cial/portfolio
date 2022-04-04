@@ -11,9 +11,12 @@ import SkillBulletPoint from '../components/skillBulletPoint'
 const Home: NextPage = () => {
   return (
     <main className="h-full dark:bg-black dark:text-white">
-      <div className="grid gap-6 p-8 overflow-y-scroll text-justify md:w-3/4 lg:w-1/2">
-        <header>
-          <h1 className="text-5xl font-bold">mar-cial</h1>
+      <div className="grid gap-6 p-6 overflow-y-scroll text-justify md:w-3/4 lg:w-1/2">
+        <main className='flex flex-col justify-start text-left'>
+          <SectionHeading text='Name' />
+            
+          <h1 className="text-5xl font-semibold font-display">Mario César Marcial Quintero</h1>
+          
           <div className="flex gap-2 pt-2">
             <motion.a
               href="https://github.com/mar-cial"
@@ -55,7 +58,8 @@ const Home: NextPage = () => {
               />
             </motion.a>
           </div>
-        </header>
+
+        </main>
 
         <section>
           <SectionHeading text='Intro' />
@@ -147,22 +151,7 @@ const Home: NextPage = () => {
         <section>
           <SectionHeading text='About me' />
           <p>
-            I like challenges and to find solutions to everyday problems. My ideal
-            job is one that allows me to approach solutions in a creative way,
-            analyzing all the possible solutions where something can go wrong to
-            correct them. In the work environment, I like the feeling of
-            collaboration towards a common goal. I know how difficult it is to
-            run a business, and this has allowed me to develop a "solution
-            first" mentality. I think that all problems have a solution, so when
-            faced with one, the most important thing is to stay calm and work as
-            a team. <br />I am very interested in observing the areas of
-            opportunity everywhere I go. If I buy coffee in the morning, I think
-            about how the shopping experience could be improved through the app.
-            If I have to do government related stuff, I think about how
-            blockchain technologies could be implemented both to facilitate and
-            make the process more ergonomic and secure. I like to dream of all
-            the ways that technology can make our lives easier, and I am excited
-            to think that I can participate in developing some of them.
+          I like challenges and to find solutions to everyday problems. My ideal job is one that allows me to approach solutions in a creative way, analyzing all the possible solutions where something can go wrong to correct them. In the work environment, I like the feeling of collaboration towards a common goal. I know how difficult it is to run a business, and this has allowed me to develop a "solution first" mentality. I think that all problems have a solution, so when faced with one, the most important thing is to stay calm and work as a team. <br />I am very interested in observing the areas of opportunity everywhere I go. If I buy coffee in the morning, I think about how the shopping experience could be improved through the app. If I have to do government related stuff, I think about how blockchain technologies could be implemented both to facilitate and make the process more ergonomic and secure. I like to dream of all the ways that technology can make our lives easier, and I am excited to think that I can participate in developing some of them.
           </p>
         </section>
 

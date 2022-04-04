@@ -6,7 +6,7 @@ type Props = {
 
 const SectionHeading: FC<Props> = ({text}) => {
   return (
-    <h2 className='text-lg font-semibold text-orange-500'>{text}</h2>
+    <h2 className='font-semibold text-orange-500 font-display'>{text}</h2>
   )
 }
 
