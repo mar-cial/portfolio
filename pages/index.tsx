@@ -134,7 +134,7 @@ const Home: NextPage = () => {
             <header>
               <h3 className='text-xl font-bold'>RMDB - Rick and Morty API DB</h3>
             </header>
-            <p>RMDB is a project made to showcase my vanilla ReactJs skills. In this project, the data was fetched from <TextLink url='https://rickandmortyapi.com' text='Rick and Mort API' /> using the <TextLink text='RTK Query API' url='https://redux-toolkit.js.org/tutorials/rtk-query' />. I used Create React App, Redux, Redux Toolkit Query, and styled-components.</p>
+            <p>RMDB is a NextJs app that consumes the <TextLink url='https://rickandmortyapi.com' text='Rick and Morty API' /> to display all the characters, locations and episodes in the show. Fetching is made using <TextLink url='https://redux.js.org/tutorials/essentials/part-1-overview-concepts' text='RTK Query.' /></p>
             <div className="flex gap-4 pt-4">
               <ExternalLinkLabel
                 url="https://github.com/mar-cial/rmdb"
@@ -159,6 +159,7 @@ const Home: NextPage = () => {
           <h2 className="text-sm font-medium text-orange-500">Contact</h2>
           <p>Send me a message!</p>
           <p>I'd love to receive feedback, tips and suggestions.</p>
+          <p>I got a lot of spam mail :') so this will be working again once I implement some anti-spam feature. You can still leave me a message through LinkedIn though!</p>
           <ContactForm />
         </section>
       </div>
