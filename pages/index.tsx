@@ -233,8 +233,9 @@ const Homepage: NextPage = () => {
                 every idea has potential. I have a knack for knowing what
                 businesses need, and work hard to achieve the set goals.
               </p>
+              <br />
               On the casual side, I love hanging out with my friends, watching
-              shows with my girlfriend and playing with my ADHD dog. She's
+              shows with my fiancée and playing with my ADHD dog. She's
               called Pipu. Send me a message if you'd like a pic of her :)
             </div>
           </div>
