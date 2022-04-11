@@ -199,7 +199,7 @@ const Homepage: NextPage = () => {
           <p>On the casual side, I love hanging out with my friends, watching shows with my girlfriend and playing with my ADHD dog. She's called Pipu. Send me a message if you'd like a pic of her :)</p>
         </section>
 
-        <footer className="p-4 bg-black sm:p-12" id="contact`">
+        <footer className="p-4 bg-black sm:p-12" id="contact">
           <CategoryTitle title={'Contact me'} />
 
           <a href = "mailto: cesarmarcialq@gmail.com" className='text-red-400 transition-all hover:text-red-600'>Send me an email!</a>    
