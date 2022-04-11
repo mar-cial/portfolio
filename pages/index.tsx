@@ -19,13 +19,15 @@ const Homepage: NextPage = () => {
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
       </Head>
 
-      <div className="text-black bg-white font-display">
+      <div className="relative overflow-hidden text-black bg-white font-display">
         <header>
           <Navbar />
         </header>
 
         <main className="relative p-4 sm:p-12" >
-        <Logo className={'absolute left-24 top-48 right-4 opacity-10 sm:left-48 sm:top-0'}/>
+          <motion.div animate={{rotate: -360, transition: {ease: 'linear', duration: 50, repeat: Infinity}, origin: 0}} className={'absolute  w-full opacity-5  sm:top-0 -right-24 top-32 sm:-right-48'}>
+          <Logo className={' '}/>
+          </motion.div>
           <h1 className="text-3xl font-bold text-red-500 sm:text-6xl">
             Mario César
             <br />
