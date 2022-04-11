@@ -8,6 +8,9 @@ import { BiLinkExternal } from 'react-icons/bi'
 import { SiGithub } from 'react-icons/si'
 import { SiLinkedin } from 'react-icons/si'
 import { SiInstagram } from 'react-icons/si'
+import Logo from '../components/logo'
+import Image from 'next/image'
+
 const Homepage: NextPage = () => {
   return (
     <>
@@ -16,13 +19,14 @@ const Homepage: NextPage = () => {
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
       </Head>
 
-      <div className="text-white bg-red-600 font-display">
+      <div className="text-black bg-white font-display">
         <header>
           <Navbar />
         </header>
 
-        <main className="p-4 sm:p-12">
-          <h1 className="text-3xl font-bold sm:text-6xl">
+        <main className="relative p-4 sm:p-12" >
+        <Logo className={'absolute left-24 top-48 right-4 opacity-10 sm:left-48 sm:top-0'}/>
+          <h1 className="text-3xl font-bold text-red-500 sm:text-6xl">
             Mario César
             <br />
             Marcial Quintero
@@ -34,6 +38,7 @@ const Homepage: NextPage = () => {
             <br />
             My passion is web development and all its intricacies.
           </p>
+          
         </main>
 
         <section className="p-4 sm:p-12">
@@ -41,8 +46,8 @@ const Homepage: NextPage = () => {
           <SkillsRibbon />
         </section>
 
-        <section className="p-4 text-black bg-yellow-500 sm:p-12" id="projects">
-          <CategoryTitle title={'Projects'} />
+        <section className="p-4 text-white bg-gray-500 sm:p-12" id="projects">
+          <h2 className="pb-4 text-2xl font-semibold">Projects</h2>
 
           <article className="py-4 border-black border-y-2">
             <div>
@@ -58,7 +63,10 @@ const Homepage: NextPage = () => {
                     'flex items-center transition-all hover:translate-x-1'
                   }
                 >
-                  <a href="https://github.com/mar-cial/flexstrip" className={'pr-1'}>
+                  <a
+                    href="https://github.com/mar-cial/flexstrip"
+                    className={'pr-1'}
+                  >
                     GitHub repo
                   </a>
                   <BiLinkExternal />
@@ -154,7 +162,10 @@ const Homepage: NextPage = () => {
                     'flex items-center transition-all hover:translate-x-1'
                   }
                 >
-                  <a href="https://github.com/mar-cial/project-bytes" className={'pr-1'}>
+                  <a
+                    href="https://github.com/mar-cial/project-bytes"
+                    className={'pr-1'}
+                  >
                     GitHub repo
                   </a>
                   <BiLinkExternal />
@@ -177,37 +188,108 @@ const Homepage: NextPage = () => {
               <div className={'pt-6'}>
                 <div>
                   <p>
-                    This is a personal project to practice React every day.<br />It is named Project Bytes because the projects are small enough to come up with them and complete them on the same day.<br />Some of the concepts I've explored are:
-                    <ul className='pl-4 list-disc'>
-                      <li>
-                        Data fetching
-                      </li>
-                      <li>Consuming REST API</li>
-                      <li>Animations with framer motion</li>
-                      <li>Typescript</li>
-                    </ul> 
+                    This is a personal project to practice React every day.
+                    <br />
+                    It is named Project Bytes because the projects are small
+                    enough to come up with them and complete them on the same
+                    day.
+                    <br />
+                    Some of the concepts I've explored are:
                   </p>
+                  <ul className="pl-4 list-disc">
+                    <li>Data fetching</li>
+                    <li>Consuming REST API</li>
+                    <li>Animations with framer motion</li>
+                    <li>Typescript</li>
+                  </ul>
                 </div>
               </div>
             </div>
           </article>
         </section>
 
-        <section className="p-4 sm:p-12" id="about">
-          <CategoryTitle title='About me' />
-          <p>Hey there. My name is César, and I love solving problems and learning new things. I believe every problem has a solution, and every idea has potential. I have a knack for knowing what businesses need, and work hard to achieve the set goals.</p>
-          <p>On the casual side, I love hanging out with my friends, watching shows with my girlfriend and playing with my ADHD dog. She's called Pipu. Send me a message if you'd like a pic of her :)</p>
+        <section className="p-4 sm:p-12 " id="about">
+          <div className="grid items-center gap-6 sm:grid-cols-3">
+
+            <div className='flex items-center justify-center'>
+              <div className="sm:w-full md:w-3/4">
+                <Image
+                  src={'/face.jpg'}
+                  width={1000}
+                  height={1100}
+                  layout="intrinsic"
+                  className="rounded-md md:rounded-full "
+                />
+              </div>
+            </div>
+
+            <div className="sm:col-span-2">
+              <CategoryTitle title="About me" />
+              <p>
+                Hey there. My name is César, and I love solving problems and
+                learning new things. I believe every problem has a solution, and
+                every idea has potential. I have a knack for knowing what
+                businesses need, and work hard to achieve the set goals.
+              </p>
+              On the casual side, I love hanging out with my friends, watching
+              shows with my girlfriend and playing with my ADHD dog. She's
+              called Pipu. Send me a message if you'd like a pic of her :)
+            </div>
+          </div>
         </section>
 
-        <footer className="p-4 bg-black sm:p-12" id="contact">
+        <footer className="p-4 text-white bg-black sm:p-12" id="contact">
           <CategoryTitle title={'Contact me'} />
 
-          <a href = "mailto: cesarmarcialq@gmail.com" className='text-red-400 transition-all hover:text-red-600'>Send me an email!</a>    
-          <h4 className='py-4 font-medium text-gray-400'>Socials</h4>   
-          <div className='flex gap-6'>
-            <motion.a href="https://github.com/mar-cial" whileHover={{y:-2}} whileTap={{y: 0}}><SiGithub className='w-12 h-12'/></motion.a>
-            <motion.a href="https://www.linkedin.com/in/mar-cial/" whileHover={{y:-2}} whileTap={{y: 0}}><SiLinkedin className='w-12 h-12'/></motion.a>
-            <motion.a href="https://www.instagram.com/mar.cial/" whileHover={{y:-2}} whileTap={{y: 0}}><SiInstagram className='w-12 h-12'/></motion.a>
+          <div className="grid justify-center gap-6 sm:grid-cols-3">
+            <div className="flex items-center sm:justify-start ">
+              <a
+                href="mailto: cesarmarcialq@gmail.com"
+                className="text-2xl text-white transition-all hover:text-gray-300"
+              >
+                Send me an email!
+              </a>
+            </div>
+
+            <motion.div className="flex items-center justify-center">
+              <motion.div
+                className="items-center w-24 h-24 sm:justify-center fill-white "
+                animate={{
+                  transition: {
+                    ease: 'linear',
+                    duration: 5.5,
+                    repeat: Infinity,
+                  },
+                  rotate: -360,
+                }}
+              >
+                <Logo className={'fill-current'} />
+              </motion.div>
+            </motion.div>
+
+            <div className="flex items-center gap-6 sm:justify-end">
+              <motion.a
+                href="https://github.com/mar-cial"
+                whileHover={{ y: -2 }}
+                whileTap={{ y: 0 }}
+              >
+                <SiGithub className="w-12 h-12" />
+              </motion.a>
+              <motion.a
+                href="https://www.linkedin.com/in/mar-cial/"
+                whileHover={{ y: -2 }}
+                whileTap={{ y: 0 }}
+              >
+                <SiLinkedin className="w-12 h-12" />
+              </motion.a>
+              <motion.a
+                href="https://www.instagram.com/mar.cial/"
+                whileHover={{ y: -2 }}
+                whileTap={{ y: 0 }}
+              >
+                <SiInstagram className="w-12 h-12" />
+              </motion.a>
+            </div>
           </div>
         </footer>
       </div>

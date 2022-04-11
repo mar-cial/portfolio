@@ -27,7 +27,7 @@ const SkillsRibbon = () => {
 
       <div>
         <h3 className="pb-4">Technologies I'm comfortable working with:</h3>
-        <div className="flex gap-6 sm:gap-12">
+        <div className="flex gap-6 text-red-500 sm:gap-12">
           <SkillItem label={'React'}>
             <SiReact className={'h-12 w-12'} />
           </SkillItem>
@@ -45,14 +45,13 @@ const SkillsRibbon = () => {
 
       <div>
         <h3 className='pb-4'>Technologies I'm learning:</h3>
-        <div className="flex gap-6 sm:gap-12">
+        <div className="flex gap-6 text-red-500 sm:gap-12">
           <SkillItem label={'Go'}>
             <SiGoland className={'h-12 w-12'} />
           </SkillItem>
           <SkillItem label={'Docker'}>
             <SiDocker className={'h-12 w-12'} />
           </SkillItem>
-          
         </div>
       </div>
     </div>

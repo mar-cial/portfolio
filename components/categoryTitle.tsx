@@ -12,7 +12,7 @@ type CategoryTitleProps = {
 // Beginning of component: categoryTitle
 const CategoryTitle = ({title}: CategoryTitleProps) => {
   return (
-    <h2 className="text-2xl pb-4 font-semibold">
+    <h2 className="pb-4 text-2xl font-semibold text-red-500">
       {title}
     </h2>
   )
