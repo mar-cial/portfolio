@@ -25,8 +25,8 @@ const Homepage: NextPage = () => {
         </header>
 
         <main className="relative p-4 sm:p-12" >
-          <motion.div animate={{rotate: -360, transition: {ease: 'linear', duration: 50, repeat: Infinity}, origin: 0}} className={'absolute  w-full opacity-5  sm:top-0 -right-24 top-32 sm:-right-48'}>
-          <Logo className={' '}/>
+          <motion.div animate={{rotate: -360, transition: {ease: 'linear', duration: 50, repeat: Infinity}, origin: 0}} className={'absolute  w-full opacity-5  sm:top-0 -right-24 top-32 sm:-right-48 z-10'}>
+          <Logo />
           </motion.div>
           <h1 className="text-3xl font-bold text-red-500 sm:text-6xl">
             Mario César
@@ -59,10 +59,10 @@ const Homepage: NextPage = () => {
                 </h3>
               </header>
 
-              <div className={'flex gap-6'}>
+              <div className={'flex gap-6 relative z-30' }>
                 <div
                   className={
-                    'flex items-center transition-all hover:translate-x-1'
+                    'flex items-center transition-all hover:translate-x-1 '
                   }
                 >
                   <a
@@ -78,7 +78,7 @@ const Homepage: NextPage = () => {
                     'flex items-center transition-all hover:translate-x-1'
                   }
                 >
-                  <a href="https://flexstrippvc.com" className={'pr-1'}>
+                  <a href="https://flexstrippvc.com" className={'pr-1 '}>
                     Live website
                   </a>
                   <BiLinkExternal />
@@ -111,7 +111,7 @@ const Homepage: NextPage = () => {
                 </h3>
               </header>
 
-              <div className={'flex gap-6'}>
+              <div className={'flex gap-6 relative z-30'}>
                 <div
                   className={
                     'flex items-center transition-all hover:translate-x-1'
@@ -129,7 +129,7 @@ const Homepage: NextPage = () => {
                 >
                   <a
                     href="https://rmdb-mar-cial.vercel.app/"
-                    className={'pr-1'}
+                    className={'pr-1 '}
                   >
                     Live website
                   </a>
@@ -158,7 +158,7 @@ const Homepage: NextPage = () => {
                 <h3 className={'pb-2 font-console text-2xl'}>Project bytes</h3>
               </header>
 
-              <div className={'flex gap-6'}>
+              <div className={'flex gap-6 relative z-30'}>
                 <div
                   className={
                     'flex items-center transition-all hover:translate-x-1'
