@@ -24,9 +24,18 @@ const Homepage: NextPage = () => {
           <Navbar />
         </header>
 
-        <main className="relative p-4 sm:p-12" >
-          <motion.div animate={{rotate: -360, transition: {ease: 'linear', duration: 50, repeat: Infinity}, origin: 0}} className={'absolute  w-full opacity-5  sm:top-0 -right-24 top-32 sm:-right-48 z-10'}>
-          <Logo />
+        <main className="relative p-4 sm:p-12">
+          <motion.div
+            animate={{
+              rotate: -360,
+              transition: { ease: 'linear', duration: 50, repeat: Infinity },
+              origin: 0,
+            }}
+            className={
+              'absolute  -right-24 top-32  z-10 w-full opacity-5 sm:top-0 sm:-right-48'
+            }
+          >
+            <Logo />
           </motion.div>
           <h1 className="text-3xl font-bold text-red-500 sm:text-6xl">
             Mario César
@@ -40,7 +49,6 @@ const Homepage: NextPage = () => {
             <br />
             My passion is web development and all its intricacies.
           </p>
-          
         </main>
 
         <section className="p-4 sm:p-12">
@@ -59,7 +67,7 @@ const Homepage: NextPage = () => {
                 </h3>
               </header>
 
-              <div className={'flex gap-6 relative z-30' }>
+              <div className={'relative z-30 flex gap-6'}>
                 <div
                   className={
                     'flex items-center transition-all hover:translate-x-1 '
@@ -111,7 +119,7 @@ const Homepage: NextPage = () => {
                 </h3>
               </header>
 
-              <div className={'flex gap-6 relative z-30'}>
+              <div className={'relative z-30 flex gap-6'}>
                 <div
                   className={
                     'flex items-center transition-all hover:translate-x-1'
@@ -158,7 +166,7 @@ const Homepage: NextPage = () => {
                 <h3 className={'pb-2 font-console text-2xl'}>Project bytes</h3>
               </header>
 
-              <div className={'flex gap-6 relative z-30'}>
+              <div className={'relative z-30 flex gap-6'}>
                 <div
                   className={
                     'flex items-center transition-all hover:translate-x-1'
@@ -208,12 +216,64 @@ const Homepage: NextPage = () => {
               </div>
             </div>
           </article>
+
+          <article className="py-4 border-black border-y-2">
+            <div>
+              <header>
+                <h3 className={'pb-2 font-console text-2xl'}>
+                  Products - Open source API built with Go
+                </h3>
+              </header>
+
+              <div className={'relative z-30 flex gap-6'}>
+                <div
+                  className={
+                    'flex items-center transition-all hover:translate-x-1'
+                  }
+                >
+                  <a
+                    href="https://github.com/mar-cial/productsAPI"
+                    className={'pr-1'}
+                  >
+                    GitHub repo
+                  </a>
+                  <BiLinkExternal />
+                </div>
+              </div>
+
+              <div className={'pt-6'}>
+                <div>
+                  <p>
+                    Products API is a project developed exclusively with Go. As
+                    the description says, the main focus is to provide data so
+                    anyone can practice their front end skills.
+                  </p>
+                  <p>There are three main endpoints:</p>
+                  <ul className="pl-12 font-mono list-decimal ">
+                    <li>/</li>
+                    <li>/api/products</li>
+                    <li>/api/products/:id</li>
+                  </ul>
+                  <p>
+                    1. Acts as the API homepage, with instructions and an
+                    introduction.
+                  </p>
+                  <p>
+                    2. Shows all the products available, 300 being the count.
+                  </p>
+                  <p>
+                    3. Shows a single product, with id being an int ranging
+                    1-300.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </article>
         </section>
 
         <section className="p-4 sm:p-12 " id="about">
           <div className="grid items-center gap-6 sm:grid-cols-3">
-
-            <div className='flex items-center justify-center'>
+            <div className="flex items-center justify-center">
               <div className="sm:w-full md:w-3/4">
                 <Image
                   src={'/face.jpg'}
@@ -235,8 +295,8 @@ const Homepage: NextPage = () => {
               </p>
               <br />
               On the casual side, I love hanging out with my friends, watching
-              shows with my fiancée and playing with my ADHD dog. She's
-              called Pipu. Send me a message if you'd like a pic of her :)
+              shows with my fiancée and playing with my ADHD dog. She's called
+              Pipu. Send me a message if you'd like a pic of her :)
             </div>
           </div>
         </section>
@@ -256,7 +316,7 @@ const Homepage: NextPage = () => {
 
             <motion.div className="flex items-center justify-center">
               <motion.div
-                className="items-center w-24 h-24 sm:justify-center fill-white "
+                className="items-center w-24 h-24 fill-white sm:justify-center "
                 animate={{
                   transition: {
                     ease: 'linear',

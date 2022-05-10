@@ -1,11 +1,9 @@
 import React, { ReactNode } from 'react'
-import { SiReact } from 'react-icons/si'
+import { SiReact, SiTypescript } from 'react-icons/si'
 import { SiNextdotjs } from 'react-icons/si'
 import { SiGoland } from 'react-icons/si'
 import { SiNodedotjs } from 'react-icons/si'
-import { SiMongodb } from 'react-icons/si'
 import { SiDocker } from 'react-icons/si'
-import { SiWeb3Dotjs } from 'react-icons/si'
 
 type skillItemProps = {
   children: ReactNode
@@ -23,8 +21,7 @@ const SkillItem = ({ label, children }: skillItemProps) => {
 
 const SkillsRibbon = () => {
   return (
-    <div className='flex flex-col gap-6'>
-
+    <div className="flex flex-col gap-6">
       <div>
         <h3 className="pb-4">Technologies I'm comfortable working with:</h3>
         <div className="flex gap-6 text-red-500 sm:gap-12">
@@ -37,14 +34,14 @@ const SkillsRibbon = () => {
           <SkillItem label={'Node'}>
             <SiNodedotjs className={'h-12 w-12'} />
           </SkillItem>
-          <SkillItem label={'MongoDB'}>
-            <SiMongodb className={'h-12 w-12'} />
+          <SkillItem label={'Typescript'}>
+            <SiTypescript className={'h-12 w-12'} />
           </SkillItem>
         </div>
       </div>
 
       <div>
-        <h3 className='pb-4'>Technologies I'm learning:</h3>
+        <h3 className="pb-4">Technologies I'm learning:</h3>
         <div className="flex gap-6 text-red-500 sm:gap-12">
           <SkillItem label={'Go'}>
             <SiGoland className={'h-12 w-12'} />
