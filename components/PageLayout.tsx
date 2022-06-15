@@ -58,7 +58,11 @@ const PageLayout = ({ children }: Props) => {
 
           <div>
             <p className="font-mono text-gray-500 text-md">Socials</p>
-            
+            <div className='flex gap-2'>
+              <p>Github</p>
+              <p>LinkedIn</p>
+              <p>Instagram</p>
+            </div>
           </div>
         </header>
 
@@ -67,7 +71,7 @@ const PageLayout = ({ children }: Props) => {
 
           <div className="grid gap-4">
             {links.map((link) => (
-              <div>
+              <motion.div whileHover={{y: -3}} whileTap={{y: 0}}>
                 <Link href={link.path} passHref>
                   <a>
                     <article className="grid grid-cols-3 p-4 rounded-md shadow-md">
@@ -82,7 +86,7 @@ const PageLayout = ({ children }: Props) => {
                     </article>
                   </a>
                 </Link>
-              </div>
+              </motion.div>
             ))}
           </div>
         </section>
