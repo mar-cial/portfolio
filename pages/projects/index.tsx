@@ -2,12 +2,14 @@ import { NextPage } from 'next'
 import React from 'react'
 import PageLayout from '../../components/PageLayout'
 
-type Props = {}
-
-const ProjectsPage: NextPage = (props: Props) => {
+const ProjectsPage: NextPage = () => {
   return (
     <PageLayout>
-      <h2>Projects page</h2>
+      <section className="col-span-3 p-8 md:overflow-scroll">
+        <header>
+          <h2 className="text-4xl font-bold">Projects</h2>
+        </header>
+      </section>
     </PageLayout>
   )
 }

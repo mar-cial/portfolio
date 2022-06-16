@@ -43,22 +43,22 @@ const links: ILinks[] = [
 
 const PageLayout = ({ children }: Props) => {
   return (
-    <div className="grid h-screen md:grid-cols-2 lg:grid-cols-5">
-      <main className="grid col-span-2 gap-2 p-8">
+    <div className="grid h-screen grid-cols-1 bg-white md:grid-cols-2 lg:grid-cols-5">
+      <main className="grid gap-2 p-4 text-white bg-blue-600 md:col-span-2">
         <header className="flex flex-col gap-2">
           <div>
-            <p className="font-mono text-gray-500 text-md">Name</p>
+            <p className="font-mono text-blue-200 text-md">Name</p>
             <h1 className="text-6xl font-bold">Mario César Marcial Quintero</h1>
           </div>
 
           <div>
-            <p className="font-mono text-gray-500 text-md">Occupation</p>
+            <p className="font-mono text-blue-200 text-md">Occupation</p>
             <h2>Front end software developer</h2>
           </div>
 
           <div>
-            <p className="font-mono text-gray-500 text-md">Socials</p>
-            <div className='flex gap-2'>
+            <p className="font-mono text-blue-200 text-md">Socials</p>
+            <div className="flex gap-2">
               <p>Github</p>
               <p>LinkedIn</p>
               <p>Instagram</p>
@@ -67,11 +67,11 @@ const PageLayout = ({ children }: Props) => {
         </header>
 
         <section>
-          <p className="font-mono text-gray-500 text-md">Quick navigation</p>
+          <p className="font-mono text-blue-200 text-md">Quick navigation</p>
 
           <div className="grid gap-4">
             {links.map((link) => (
-              <motion.div whileHover={{y: -3}} whileTap={{y: 0}}>
+              <motion.div whileHover={{ y: -3 }} whileTap={{ y: 0 }}>
                 <Link href={link.path} passHref>
                   <a>
                     <article className="grid grid-cols-3 p-4 rounded-md shadow-md">
