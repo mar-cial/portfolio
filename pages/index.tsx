@@ -13,9 +13,9 @@ const Homepage: NextPage = () => {
 
         <div className="py-6 pt-3">
           <p>
-            Hey there. I am a 27 years old self-taught front-end developer
-            fluent in english and spanish from Mexicali, Baja Calfornia. Most of
-            my projects are done using{' '}
+            Hey there. I am a self-taught front-end developer fluent in english
+            and spanish from Mexicali, Baja Calfornia. Most of my projects are
+            done using{' '}
             <a
               href="https://nextjs.org"
               className="font-bold hover:underline"
