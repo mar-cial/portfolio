@@ -25,7 +25,7 @@ const Certifications = () => {
             </a>
           </div>
           <div>
-            <p className="font-mono text-gray-600 text-md">
+            <p className="text-gray-600 text-md font-console">
               Course description
             </p>
             <p className="italic">
@@ -34,7 +34,9 @@ const Certifications = () => {
             </p>
           </div>
           <div>
-            <p className="font-mono text-gray-600 text-md">Things I learned</p>
+            <p className="text-gray-600 text-md font-console">
+              Things I learned
+            </p>
             <p>
               This course served as a great introduction to React. It covers all
               the essential topics and goes in-depth about useContext and Redux,
@@ -54,7 +56,7 @@ const Certifications = () => {
             </a>
             <a
               href="https://www.udemy.com/share/101whA3@yQUQ7bAzATAKp5nlUs_rtL4-irCVL-zN7tY_AXt09s3Sy0CBBS2ung_yxemSp-ru/"
-              className="text-lg font-medium hover:underline"
+              className="text-lg font-medium font-text hover:underline"
               target={'_blank'}
             >
               Typescript with modern React (i.e. hooks, context, suspense)
@@ -62,7 +64,7 @@ const Certifications = () => {
           </div>
 
           <div>
-            <p className="font-mono text-gray-600 text-md">
+            <p className="text-gray-600 text-md font-console">
               Course description
             </p>
             <p className="italic">
@@ -72,7 +74,9 @@ const Certifications = () => {
           </div>
 
           <div>
-            <p className="font-mono text-gray-600 text-md">Things I learned</p>
+            <p className="text-gray-600 text-md font-console">
+              Things I learned
+            </p>
             <p>
               I learned a lot about working with Typescript + React. Hooks are
               tricky to understand, at least to me. The subject I struggled the
@@ -99,7 +103,7 @@ const Certifications = () => {
           </div>
 
           <div>
-            <p className="font-mono text-gray-600 text-md">
+            <p className="text-gray-600 text-md font-console">
               Course description
             </p>
             <p className="italic">
@@ -109,7 +113,9 @@ const Certifications = () => {
           </div>
 
           <div>
-            <p className="font-mono text-gray-600 text-md">Things I learned</p>
+            <p className="text-gray-600 text-md font-console">
+              Things I learned
+            </p>
             <p>
               I loved this course. The instructor Trevor McLeod makes a
               programming language so easy to understand. Go is my favorite
