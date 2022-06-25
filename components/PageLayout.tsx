@@ -17,6 +17,30 @@ interface ILinks {
   path: string
 }
 
+interface Socials {
+  id: number
+  link: string
+  text: string
+}
+
+const socialLinks: Socials[] = [
+  {
+    id: 1,
+    link: 'https://github.com/mar-cial',
+    text: 'Github',
+  },
+  {
+    id: 2,
+    link: 'https://www.linkedin.com/in/mar-cial/',
+    text: 'LinkedIn',
+  },
+  {
+    id: 3,
+    link: 'https://www.instagram.com/mar.cial/',
+    text: 'Instagram',
+  },
+]
+
 const links: ILinks[] = [
   {
     id: 1,
@@ -44,30 +68,37 @@ const links: ILinks[] = [
 const PageLayout = ({ children }: Props) => {
   return (
     <div className="grid h-screen grid-cols-1 bg-white md:grid-cols-2 lg:grid-cols-5">
-      <main className="grid gap-2 p-4 text-white bg-blue-600 md:col-span-2">
+      <main className="grid gap-2 p-8 text-white bg-blue-600 md:col-span-2">
         <header className="flex flex-col gap-2">
           <div>
-            <p className="font-mono text-blue-200 text-md">Name</p>
+            <p className="text-blue-200 text-md font-console">Name</p>
             <h1 className="text-6xl font-bold">Mario César Marcial Quintero</h1>
           </div>
 
           <div>
-            <p className="font-mono text-blue-200 text-md">Occupation</p>
+            <p className="text-blue-200 text-md font-console">Occupation</p>
             <h2>Front end software developer</h2>
           </div>
 
           <div>
-            <p className="font-mono text-blue-200 text-md">Socials</p>
-            <div className="flex gap-2">
-              <p>Github</p>
-              <p>LinkedIn</p>
-              <p>Instagram</p>
+            <p className="text-blue-200 text-md font-console">Socials</p>
+            <div className="flex gap-2 group">
+              {socialLinks.map((sl) => (
+                <a
+                  href={sl.link}
+                  key={sl.id}
+                  className={'hover:underline hover:underline-offset-4'}
+                  target={'_blank'}
+                >
+                  {sl.text}
+                </a>
+              ))}
             </div>
           </div>
         </header>
 
         <section>
-          <p className="font-mono text-blue-200 text-md">Quick navigation</p>
+          <p className="text-blue-200 text-md font-console">Quick navigation</p>
 
           <div className="grid gap-4">
             {links.map((link) => (
