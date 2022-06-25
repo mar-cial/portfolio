@@ -1,6 +1,6 @@
 import { NextPage } from 'next'
-import { SiGoland, SiHtml5, SiSass } from 'react-icons/si'
 import PageLayout from '../../components/PageLayout'
+import { SiGoland, SiHtml5, SiSass } from 'react-icons/si'
 import { IProjects, IProjectRow } from '../../model/IProjects'
 
 const projects: IProjects[] = [
