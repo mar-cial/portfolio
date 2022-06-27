@@ -6,7 +6,7 @@ import TechStack from '../components/TechStack'
 const Homepage: NextPage = () => {
   return (
     <PageLayout>
-      <section className="col-span-3 p-8 md:overflow-scroll">
+      <section className="col-span-3 p-4 md:p-8 md:overflow-scroll">
         <header>
           <h2 className="text-4xl font-bold">Introduction</h2>
         </header>
