@@ -72,7 +72,7 @@ const PageLayout = ({ children }: Props) => {
         <header className="flex flex-col gap-2">
           <div>
             <p className="text-blue-200 text-md font-console">Name</p>
-            <h1 className="text-6xl font-bold">Mario César Marcial Quintero</h1>
+            <h1 className="text-6xl font-bold font-display">Mario César Marcial Quintero</h1>
           </div>
 
           <div>
@@ -107,8 +107,8 @@ const PageLayout = ({ children }: Props) => {
                   <a>
                     <article className="grid grid-cols-3 p-4 rounded-md shadow-md">
                       <div className="col-span-2">
-                        <h3 className="text-2xl font-medium">{link.text}</h3>
-                        <p>{link.desc}</p>
+                        <h3 className="text-2xl font-medium font-display">{link.text}</h3>
+                        <p className='font-text'>{link.desc}</p>
                       </div>
 
                       <div className="flex items-center justify-end">
