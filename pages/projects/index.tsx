@@ -52,7 +52,7 @@ const projects: IProjects[] = [
   },
 ]
 
-const ProjectRow = ({ title, data, image, live, repo, tech, id }: IProjectRow) => {
+const ProjectRow = ({ title, data, image, live, repo, tech }: IProjectRow) => {
   return (
     <div className="grid gap-4">
       <div>
