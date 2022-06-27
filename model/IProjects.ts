@@ -9,6 +9,9 @@ export interface IProjects {
   title: string
   desc: string
   image: string
+  repo: string
+  live?: string
+
   tech: Tech[]
 }
 
@@ -17,6 +20,7 @@ export interface IProjectRow {
   title: string
   data: string
   image: string
-  link: string
+  repo: string
+  live?: string
   tech: Tech[]
 }

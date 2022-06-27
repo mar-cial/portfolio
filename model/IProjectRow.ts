@@ -5,6 +5,7 @@ export default interface IProjectRow {
   title: string
   data: string
   image: string
-  link: string
+  repo: string
+  live?: string
   tech: IconType[]
 }
