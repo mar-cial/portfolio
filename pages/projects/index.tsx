@@ -2,6 +2,7 @@ import { NextPage } from 'next'
 import PageLayout from '../../components/PageLayout'
 import { SiGoland, SiHtml5, SiNextdotjs, SiRedux, SiSass, SiTailwindcss } from 'react-icons/si'
 import { IProjects, IProjectRow } from '../../model/IProjects'
+import Image from 'next/image'
 
 const projects: IProjects[] = [
   {
@@ -42,8 +43,12 @@ const projects: IProjects[] = [
 const ProjectRow = ({ title, data, image, link, tech, id }: IProjectRow) => {
   return (
     <div className="grid gap-4">
+      <div>
+      <Image src={`/images/projects/${image}`} layout="responsive" width={1000} height={300} className="object-cover" />
+      </div>
       {/* <-------------------- project header --------------------> */}
       <header>
+        
         <p className="text-sm font-console text-slate-600">Name</p>
         <h3 className="text-2xl font-bold font-display">{title}</h3>
       </header>
@@ -85,7 +90,7 @@ const ProjectsPage: NextPage = () => {
                 title={p.title}
                 data={p.desc}
                 id={p.id}
-                image={''}
+                image={p.image}
                 link={''}
                 tech={p.tech}
               />
