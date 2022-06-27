@@ -68,7 +68,7 @@ const links: ILinks[] = [
 const PageLayout = ({ children }: Props) => {
   return (
     <div className="grid h-screen grid-cols-1 bg-white md:grid-cols-2 lg:grid-cols-5">
-      <main className="grid gap-2 p-8 text-white bg-blue-600 md:col-span-2">
+      <main className="grid gap-2 p-4 md:p-8 text-white bg-blue-600 md:col-span-2">
         <header className="flex flex-col gap-2">
           <div>
             <p className="text-blue-200 text-md font-console">Name</p>
@@ -102,7 +102,7 @@ const PageLayout = ({ children }: Props) => {
 
           <div className="grid gap-4">
             {links.map((link) => (
-              <motion.div whileHover={{ y: -3 }} whileTap={{ y: 0 }}>
+              <motion.div whileHover={{ y: -3 }} whileTap={{ y: 0 }} key={link.id}>
                 <Link href={link.path} passHref>
                   <a>
                     <article className="grid grid-cols-3 p-4 rounded-md shadow-md">
