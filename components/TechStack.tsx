@@ -40,7 +40,7 @@ const TechStack = () => {
   return (
     <div>
       <h2 className="text-3xl font-bold">Tech stack</h2>
-      <div className="grid grid-cols-5 gap-4 pt-4 ">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 pt-4 ">
         {Stacks.map((stack) => (
           <div
             className="flex items-center gap-4 p-2 rounded-md shadow-md"
