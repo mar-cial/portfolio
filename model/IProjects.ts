@@ -8,6 +8,7 @@ export interface IProjects {
   id: number
   title: string
   desc: string
+  image: string
   tech: Tech[]
 }
 
