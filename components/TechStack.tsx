@@ -38,7 +38,7 @@ const Stacks: TechStackModel[] = [
 ]
 const TechStack = () => {
   return (
-    <div>
+    <div className='pt-4'>
       <h2 className="text-3xl font-bold">Tech stack</h2>
       <div className="grid grid-cols-2 gap-4 pt-4 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 ">
         {Stacks.map((stack) => (
