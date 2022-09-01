@@ -1,6 +1,6 @@
 import { IconType } from 'react-icons'
 
-export default interface IProjectRow {
+export default interface ProjectRow {
   id: number
   title: string
   data: string

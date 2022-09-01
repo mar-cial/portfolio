@@ -4,7 +4,7 @@ export interface Tech {
   icon: JSX.Element
 }
 
-export interface IProjects {
+export interface ProjectModel {
   id: number
   title: string
   desc: string
@@ -16,7 +16,7 @@ export interface IProjects {
   tech: Tech[]
 }
 
-export interface IProjectRow {
+export interface ProjectRowModel {
   id: number
   title: string
   data: string
