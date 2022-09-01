@@ -8,7 +8,8 @@ export interface IProjects {
   id: number
   title: string
   desc: string
-  image: string
+  media: string
+  mediaSrc: string
   repo: string
   live?: string
 
@@ -19,7 +20,8 @@ export interface IProjectRow {
   id: number
   title: string
   data: string
-  image: string
+  media: string
+  mediaSrc: string
   repo: string
   live?: string
   tech: Tech[]
