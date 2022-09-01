@@ -68,22 +68,22 @@ const links: ILinks[] = [
 const PageLayout = ({ children }: Props) => {
   return (
     <div className="grid h-screen grid-cols-1 bg-white md:grid-cols-2 lg:grid-cols-5">
-      <main className="grid gap-2 p-4 md:p-8 text-white bg-blue-600 md:col-span-2">
+      <main className="grid gap-2 p-4 text-white md:p-8 bg-gradient-to-br from-teal-500 to-teal-900 md:col-span-2">
         <header className="flex flex-col gap-2">
           <div>
-            <p className="text-blue-200 text-md font-console">Name</p>
+            <p className="text-teal-200 text-md font-console">Name</p>
             <h1 className="text-6xl font-bold font-display">
               Mario César Marcial Quintero
             </h1>
           </div>
 
           <div>
-            <p className="text-blue-200 text-md font-console">Occupation</p>
+            <p className="text-teal-200 text-md font-console">Occupation</p>
             <h2>Front end software developer</h2>
           </div>
 
           <div>
-            <p className="text-blue-200 text-md font-console">Socials</p>
+            <p className="text-teal-200 text-md font-console">Socials</p>
             <div className="flex gap-2 group">
               {socialLinks.map((sl) => (
                 <a
@@ -100,7 +100,7 @@ const PageLayout = ({ children }: Props) => {
         </header>
 
         <section>
-          <p className="text-blue-200 text-md font-console">Quick navigation</p>
+          <p className="text-teal-200 text-md font-console">Quick navigation</p>
 
           <div className="grid gap-4">
             {links.map((link) => (

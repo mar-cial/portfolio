@@ -1,7 +1,7 @@
 import React from 'react'
 import Academind from './Academind'
 import { SiTypescript } from 'react-icons/si'
-import Gopher from '../components/gopher'
+import Gopher from '@components/gopher'
 
 const Certifications = () => {
   return (

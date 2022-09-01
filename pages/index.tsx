@@ -1,7 +1,7 @@
 import { NextPage } from 'next'
-import Certifications from '../components/certifications'
-import PageLayout from '../components/PageLayout'
-import TechStack from '../components/TechStack'
+import Certifications from '@components/certifications'
+import PageLayout from '@components/PageLayout'
+import TechStack from '@components/TechStack'
 
 const Homepage: NextPage = () => {
   return (

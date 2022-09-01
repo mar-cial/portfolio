@@ -1,6 +1,6 @@
 import { NextPage } from 'next'
 import Image from 'next/image'
-import PageLayout from '../../components/PageLayout'
+import PageLayout from '@components/PageLayout'
 
 const InterestsPage: NextPage = () => {
   return (
